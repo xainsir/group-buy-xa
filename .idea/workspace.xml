@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="387e20ea-a70e-477b-8d8a-d25929f6e9f5" name="Changes" comment="拼团初始化">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/dev-ops/app/start.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/dev-ops/app/stop.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/dev-ops/docker-compose-app.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/dev-ops/docker-compose-environment-aliyun.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/dev-ops/docker-compose-environment.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/dev-ops/mysql/sql/xfg-frame-archetype.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-api/src/main/java/cn/bugstack/api/dto/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-api/src/main/java/cn/bugstack/api/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-api/src/main/java/cn/bugstack/api/response/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-app/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-app/build.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-app/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-app/src/main/java/cn/bugstack/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-app/src/main/java/cn/bugstack/config/GuavaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-app/src/main/java/cn/bugstack/config/ThreadPoolConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-app/src/main/java/cn/bugstack/config/ThreadPoolConfigProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-app/src/main/java/cn/bugstack/config/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-app/src/main/java/cn/bugstack/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-app/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-app/src/main/resources/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-app/src/main/resources/application-test.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-app/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-app/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-app/src/main/resources/mybatis/config/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-app/src/main/resources/mybatis/mapper/frame_case_mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-app/src/test/java/cn/bugstack/test/ApiTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/xxx/adapter/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/xxx/adapter/port/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/xxx/adapter/repository/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/xxx/model/aggregate/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/xxx/model/entity/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/xxx/model/valobj/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/xxx/service/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/yyy/adapter/repository/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/yyy/model/aggregate/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/yyy/model/entity/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/yyy/model/valobj/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/yyy/service/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-infrastructure/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/adapter/port/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/adapter/repository/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/po/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/gateway/dto/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/gateway/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/redis/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-trigger/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-trigger/src/main/java/cn/bugstack/trigger/http/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-trigger/src/main/java/cn/bugstack/trigger/job/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-trigger/src/main/java/cn/bugstack/trigger/listener/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-types/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-types/src/main/java/cn/bugstack/types/common/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-types/src/main/java/cn/bugstack/types/enums/ResponseCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-types/src/main/java/cn/bugstack/types/exception/AppException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2z2XfR58slm8Yn9i2iwzCplY4ND" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="group-buy-xa-app" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.bugstack.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="lua.app" factoryName="Lua Application">
+      <option name="program" value="lua.exe" />
+      <option name="file" value="" />
+      <option name="workingDir" value="$PROJECT_DIR$/group-buy-xa-trigger/src/main/java" />
+      <option name="debuggerType" value="1" />
+      <option name="params" value="" />
+      <option name="charset" value="UTF-8" />
+      <option name="showConsole" value="true" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="387e20ea-a70e-477b-8d8a-d25929f6e9f5" name="Changes" comment="" />
+      <created>1750930246456</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1750930246456</updated>
+      <workItem from="1750930247446" duration="439000" />
+    </task>
+    <task id="LOCAL-00001" summary="拼团初始化">
+      <option name="closed" value="true" />
+      <created>1750930684081</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1750930684081</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="拼团初始化" />
+    <option name="LAST_COMMIT_MESSAGE" value="拼团初始化" />
+  </component>
+</project>
