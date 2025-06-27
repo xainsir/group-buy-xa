@@ -4,14 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="387e20ea-a70e-477b-8d8a-d25929f6e9f5" name="Changes" comment="拼团初始化">
+    <list default="true" id="387e20ea-a70e-477b-8d8a-d25929f6e9f5" name="Changes" comment="更新数据库连接配置">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-app/src/main/resources/mybatis/mapper/group_buy_activity_mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-app/src/main/resources/mybatis/mapper/group_buy_discount_mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/IGroupBuyActivityDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/IGroupBuyDiscountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/po/GroupBuyActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/po/GroupBuyDiscount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/group-buy-xa-app/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-app/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-xa-app/src/main/resources/mybatis/mapper/frame_case_mapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-xa-app/src/test/java/cn/bugstack/test/ApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-app/src/test/java/cn/bugstack/test/GroupBuyDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/po/package-info.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,8 +51,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "JUnit.GroupBuyDaoTest.test_queryGroupBuyActivityList.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -43,7 +65,39 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.GroupBuyDaoTest.test_queryGroupBuyDiscountList">
+    <configuration name="GroupBuyDaoTest.test_queryGroupBuyActivityList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="group-buy-xa-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.bugstack.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.bugstack.test" />
+      <option name="MAIN_CLASS_NAME" value="cn.bugstack.test.GroupBuyDaoTest" />
+      <option name="METHOD_NAME" value="test_queryGroupBuyActivityList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GroupBuyDaoTest.test_queryGroupBuyDiscountList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="group-buy-xa-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.bugstack.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.bugstack.test" />
+      <option name="MAIN_CLASS_NAME" value="cn.bugstack.test.GroupBuyDaoTest" />
+      <option name="METHOD_NAME" value="test_queryGroupBuyDiscountList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="group-buy-xa-app" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.bugstack.Application" />
@@ -61,6 +115,12 @@
       <option name="showConsole" value="true" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.GroupBuyDaoTest.test_queryGroupBuyDiscountList" />
+        <item itemvalue="JUnit.GroupBuyDaoTest.test_queryGroupBuyActivityList" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -78,7 +138,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1750930246456</updated>
-      <workItem from="1750930247446" duration="1237000" />
+      <workItem from="1750930247446" duration="9158000" />
     </task>
     <task id="LOCAL-00001" summary="拼团初始化">
       <option name="closed" value="true" />
@@ -96,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750930724557</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="更新数据库连接配置">
+      <option name="closed" value="true" />
+      <created>1750932341979</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1750932341979</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +173,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="拼团初始化" />
-    <option name="LAST_COMMIT_MESSAGE" value="拼团初始化" />
+    <MESSAGE value="更新数据库连接配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新数据库连接配置" />
   </component>
 </project>

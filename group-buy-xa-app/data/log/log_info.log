@@ -1,0 +1,63 @@
+25-06-27.01:25:07.545 [main            ] INFO  GroupBuyDaoTest        - Starting GroupBuyDaoTest using Java 1.8.0_371 on LAPTOP-9J2IF5JO with PID 4844 (started by 14764 in F:\RedSpider1\group-buy-xa\group-buy-xa-app)
+25-06-27.01:25:07.548 [main            ] INFO  GroupBuyDaoTest        - The following 1 profile is active: "dev"
+25-06-27.01:25:08.147 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[cn.bugstack]' package. Please check your configuration.
+25-06-27.01:25:09.410 [main            ] INFO  GroupBuyDaoTest        - Started GroupBuyDaoTest in 2.3 seconds (JVM running for 3.474)
+25-06-27.01:25:09.451 [main            ] ERROR TestContextManager     - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@f03482] to prepare test instance [cn.bugstack.test.GroupBuyDaoTest@6fa56e]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cn.bugstack.test.GroupBuyDaoTest': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.bugstack.infrastructure.dao.IGroupBuyActivityDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:417)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:119)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.bugstack.infrastructure.dao.IGroupBuyActivityDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1801)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 29 common frames omitted
+25-06-27.14:01:36.390 [main            ] INFO  GroupBuyDaoTest        - Starting GroupBuyDaoTest using Java 1.8.0_371 on LAPTOP-9J2IF5JO with PID 20168 (started by 14764 in F:\RedSpider1\group-buy-xa\group-buy-xa-app)
+25-06-27.14:01:36.391 [main            ] INFO  GroupBuyDaoTest        - The following 1 profile is active: "dev"
+25-06-27.14:01:38.439 [main            ] INFO  GroupBuyDaoTest        - Started GroupBuyDaoTest in 2.529 seconds (JVM running for 3.818)
+25-06-27.14:01:38.673 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-06-27.14:01:39.852 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-06-27.14:01:40.095 [main            ] INFO  GroupBuyDaoTest        - 测试结果:[{"activityId":100123,"createTime":1733537980000,"discountId":"25120207","endTime":1733537980000,"groupType":0,"id":1,"startTime":1733537980000,"status":0,"tagId":"1","tagScope":"1","takeLimitCount":1,"target":1,"updateTime":1733537980000,"validTime":15}]
+25-06-27.14:01:40.105 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-06-27.14:01:40.133 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-06-27.14:03:39.146 [main            ] INFO  GroupBuyDaoTest        - Starting GroupBuyDaoTest using Java 1.8.0_371 on LAPTOP-9J2IF5JO with PID 27264 (started by 14764 in F:\RedSpider1\group-buy-xa\group-buy-xa-app)
+25-06-27.14:03:39.147 [main            ] INFO  GroupBuyDaoTest        - The following 1 profile is active: "dev"
+25-06-27.14:03:41.343 [main            ] INFO  GroupBuyDaoTest        - Started GroupBuyDaoTest in 2.739 seconds (JVM running for 4.281)
+25-06-27.14:03:41.588 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-06-27.14:03:42.709 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-06-27.14:03:42.999 [main            ] INFO  GroupBuyDaoTest        - 测试结果:[{"createTime":1733538015000,"discountDesc":"测试优惠","discountId":"9890001","discountName":"测试优惠","discountType":0,"id":1,"marketExpr":"20","marketPlan":"ZJ","updateTime":1733538015000}]
+25-06-27.14:03:43.018 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-06-27.14:03:43.029 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
