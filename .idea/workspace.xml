@@ -5,19 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="387e20ea-a70e-477b-8d8a-d25929f6e9f5" name="Changes" comment="更新数据库连接配置">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-buy-xa-app/src/main/resources/mybatis/mapper/group_buy_activity_mapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-buy-xa-app/src/main/resources/mybatis/mapper/group_buy_discount_mapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/IGroupBuyActivityDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/IGroupBuyDiscountDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/po/GroupBuyActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/po/GroupBuyDiscount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/model/entity/MarketProductEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/model/entity/TrialBalanceEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/IIndexGroupBuyMarketService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/IndexGroupBuyMarketServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/AbstractGroupBuyMarketSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/factory/DefaultActivityStrategyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/node/EndNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/node/MarketNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/node/RootNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/node/SwitchRoot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-types/src/main/java/cn/bugstack/types/design/framework/link/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-types/src/main/java/cn/bugstack/types/design/framework/tree/AbstractStrategyRouter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-types/src/main/java/cn/bugstack/types/design/framework/tree/StrategyHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-types/src/main/java/cn/bugstack/types/design/framework/tree/StrategyMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/group-buy-xa-app/src/main/resources/mybatis/mapper/frame_case_mapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/group-buy-xa-app/src/test/java/cn/bugstack/test/ApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-app/src/test/java/cn/bugstack/test/GroupBuyDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/package-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/po/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/xxx/adapter/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/xxx/adapter/port/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/xxx/adapter/repository/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/xxx/model/aggregate/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/xxx/model/entity/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/xxx/model/valobj/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/xxx/service/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/yyy/adapter/repository/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/yyy/model/aggregate/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/yyy/model/entity/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/yyy/model/valobj/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/yyy/service/package-info.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,18 +44,35 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 2
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;xainsir&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/xainsir/group-buy-xa&quot;,
+    &quot;accountId&quot;: &quot;24b925eb-fac5-42ff-81e1-c30ffa84f645&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2z2XfR58slm8Yn9i2iwzCplY4ND" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -55,13 +88,14 @@
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "2-2-250627-design-ruleTree-framework",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "fileTemplates",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -98,12 +132,106 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.FlaskServer">
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="group-buy-xa-app" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.bugstack.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Docutils task">
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Sphinx task">
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
     </configuration>
     <configuration default="true" type="lua.app" factoryName="Lua Application">
       <option name="program" value="lua.exe" />
@@ -119,6 +247,9 @@
       <list>
         <item itemvalue="JUnit.GroupBuyDaoTest.test_queryGroupBuyDiscountList" />
         <item itemvalue="JUnit.GroupBuyDaoTest.test_queryGroupBuyActivityList" />
+        <item itemvalue="JUnit.GroupBuyDaoTest.test_queryGroupBuyDiscountList" />
+        <item itemvalue="JUnit.GroupBuyDaoTest.test_queryGroupBuyActivityList" />
+        <item itemvalue="JUnit.GroupBuyDaoTest.test_queryGroupBuyDiscountList" />
       </list>
     </recent_temporary>
   </component>
@@ -139,6 +270,8 @@
       <option name="presentableId" value="Default" />
       <updated>1750930246456</updated>
       <workItem from="1750930247446" duration="9158000" />
+      <workItem from="1751007882347" duration="851000" />
+      <workItem from="1751008747664" duration="8616000" />
     </task>
     <task id="LOCAL-00001" summary="拼团初始化">
       <option name="closed" value="true" />
@@ -169,6 +302,29 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="2-2-250627-design-ruleTree-framework" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
