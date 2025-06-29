@@ -4,12 +4,14 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
 
 import java.util.Date;
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@Accessors(chain = true)
 public class GroupBuyActivity {
 
     private Long id;/** 自增 */
@@ -20,7 +22,13 @@ public class GroupBuyActivity {
 
     private String discountId; /** 折扣ID */
 
+    private String goodsId;/** 商品ID */
+
     private Integer groupType;/** 拼团方式（0自动成团、1达成目标拼团） */
+
+    private String source;/** 来源 */
+
+    private String channel;/** 渠道 */
 
     private Integer takeLimitCount; /** 拼团次数限制 */
 

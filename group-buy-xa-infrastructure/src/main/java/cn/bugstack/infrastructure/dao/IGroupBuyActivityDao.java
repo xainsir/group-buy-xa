@@ -8,4 +8,5 @@ import java.util.List;
 @Mapper
 public interface IGroupBuyActivityDao {
     List<GroupBuyActivity> queryGroupBuyActivityList();
+    GroupBuyActivity queryValidGroupBuyActivity(GroupBuyActivity groupBuyActivity);// 查询有效的活动
 }
