@@ -1,6 +1,7 @@
 package cn.bugstack.infrastructure.adapter.repository;
 
 import cn.bugstack.domain.activity.adapter.repository.IActivityRepository;
+import cn.bugstack.domain.activity.model.valobj.DiscountTypeEnum;
 import cn.bugstack.domain.activity.model.valobj.GroupBuyActivityDiscountVO;
 import cn.bugstack.domain.activity.model.valobj.SkuVO;
 import cn.bugstack.infrastructure.dao.IGroupBuyActivityDao;
@@ -47,7 +48,7 @@ public class ActivityRepository implements IActivityRepository {
         GroupBuyActivityDiscountVO.GroupBuyDiscount groupBuyDiscount = GroupBuyActivityDiscountVO.GroupBuyDiscount.builder()
                 .discountName(groupBuyDiscountRes.getDiscountName())
                 .discountDesc(groupBuyDiscountRes.getDiscountDesc())
-                .discountType(groupBuyDiscountRes.getDiscountType())
+                .discountType(DiscountTypeEnum.get(groupBuyDiscountRes.getDiscountType()))
                 .marketPlan(groupBuyDiscountRes.getMarketPlan())
                 .marketExpr(groupBuyDiscountRes.getMarketExpr())
                 .tagId(groupBuyDiscountRes.getTagId())
@@ -60,7 +61,7 @@ public class ActivityRepository implements IActivityRepository {
                 .channel(groupBuyActivityRes.getChannel())
                 .goodsId(groupBuyActivityRes.getGoodsId())
                 .groupBuyDiscount(groupBuyDiscount)
-                .groupType(groupBuyActivityRes.getGroupType())
+                .groupType(DiscountTypeEnum.get(groupBuyActivityRes.getGroupType()))
                 .takeLimitCount(groupBuyActivityRes.getTakeLimitCount())
                 .target(groupBuyActivityRes.getTarget())
                 .validTime(groupBuyActivityRes.getValidTime())

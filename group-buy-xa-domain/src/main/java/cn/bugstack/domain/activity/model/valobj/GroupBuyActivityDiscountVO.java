@@ -34,7 +34,7 @@ public class GroupBuyActivityDiscountVO {
     private GroupBuyDiscount groupBuyDiscount;
 
     /** 拼团方式（0自动成团、1达成目标拼团） */
-    private Integer groupType;
+    private DiscountTypeEnum groupType;
 
     /** 参团限制数 */
     private Integer takeLimitCount;
@@ -69,7 +69,7 @@ public class GroupBuyActivityDiscountVO {
         private String discountDesc; // 折扣描述
         private String marketPlan;   // 折扣优惠计划（ZJ:直减、MJ:满减、N元购）
         private String marketExpr;   // 营销表达式
-        private Integer discountType;   // 折扣类型（0:base、1:tag）
+        private DiscountTypeEnum discountType;   // 折扣类型（0:base、1:tag）
         private String tagId;        // 人群标签，特定优惠限定
     }
 }

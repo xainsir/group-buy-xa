@@ -4,15 +4,22 @@ import cn.bugstack.domain.activity.model.entity.MarketProductEntity;
 import cn.bugstack.domain.activity.model.entity.TrialBalanceEntity;
 import cn.bugstack.domain.activity.model.valobj.GroupBuyActivityDiscountVO;
 import cn.bugstack.domain.activity.model.valobj.SkuVO;
+import cn.bugstack.domain.activity.service.discount.IDiscountCalculateService;
 import cn.bugstack.domain.activity.service.trial.AbstractGroupBuyMarketSupport;
 import cn.bugstack.domain.activity.service.trial.factory.DefaultActivityStrategyFactory;
 import cn.bugstack.domain.activity.service.trial.thread.QueryGroupBuyActivityDiscountV0ThreadTask;
 import cn.bugstack.domain.activity.service.trial.thread.QuerySkuVOFromDBThreadTask;
 import cn.bugstack.types.design.framework.tree.StrategyHandler;
+import cn.bugstack.types.enums.ResponseCode;
+import cn.bugstack.types.exception.AppException;
+import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.math.BigDecimal;
+import java.util.Map;
+import java.util.Objects;
 import java.util.concurrent.*;
 
 /**
@@ -28,6 +35,8 @@ public class MarketNode extends AbstractGroupBuyMarketSupport<MarketProductEntit
     private ThreadPoolExecutor threadPoolExecutor;
     @Resource
     private EndNode endNode;
+    @Resource
+    private Map<String, IDiscountCalculateService> discountMap;
 
     @Override
     public void multiThread(MarketProductEntity requestParameter, DefaultActivityStrategyFactory.DynamicContext dynamicContext) throws ExecutionException, InterruptedException, TimeoutException {
@@ -46,6 +55,21 @@ public class MarketNode extends AbstractGroupBuyMarketSupport<MarketProductEntit
     }
     @Override
     public TrialBalanceEntity doApply(MarketProductEntity requestParameter, DefaultActivityStrategyFactory.DynamicContext dynamicContext) throws Exception {
+        log.info("拼团商品查询试算服务-EndNode userId:{} requestParameter:{}", requestParameter.getUserId(), JSON.toJSONString(requestParameter));
+
+        GroupBuyActivityDiscountVO groupBuyActivityDiscountVO = dynamicContext.getGroupBuyActivityDiscountVO();
+        GroupBuyActivityDiscountVO.GroupBuyDiscount groupBuyDiscount= groupBuyActivityDiscountVO.getGroupBuyDiscount();
+
+        SkuVO skuVO = dynamicContext.getSkuVO();
+
+        IDiscountCalculateService discountService = discountMap.get(groupBuyDiscount.getMarketPlan());
+        if(Objects.isNull(discountService)) {
+            throw new AppException(ResponseCode.E0001.getCode(),ResponseCode.E0001.getInfo());
+        }
+        // 拼团优惠试算
+        BigDecimal deductionPrice = discountService.calculate(requestParameter.getUserId(), skuVO.getOriginalPrice(), groupBuyDiscount);
+        dynamicContext.setDeductionPrice(deductionPrice);
+
         return router(requestParameter, dynamicContext);
     }
     @Override

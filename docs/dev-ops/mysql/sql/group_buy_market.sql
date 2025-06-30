@@ -86,7 +86,10 @@ LOCK TABLES `group_buy_discount` WRITE;
 
 INSERT INTO `group_buy_discount` (`id`, `discount_id`, `discount_name`, `discount_desc`, `discount_type`, `market_plan`, `market_expr`, `tag_id`, `create_time`, `update_time`)
 VALUES
-    (1,25120207,'测试优惠','测试优惠',0,'ZJ','20',NULL,'2024-12-07 10:20:15','2024-12-21 11:13:32');
+    (1,'25120207','直减优惠20元','直减优惠20元',0,'ZJ','20',NULL,'2024-12-07 10:20:15','2024-12-22 12:09:45'),
+    (2,'25120208','满减优惠100-10元','满减优惠100-10元',0,'MJ','100,10',NULL,'2024-12-07 10:20:15','2024-12-22 12:09:47'),
+    (4,'25120209','折扣优惠8折','折扣优惠8折',0,'ZK','0.8',NULL,'2024-12-07 10:20:15','2024-12-22 12:11:36'),
+    (5,'25120210','N元购买优惠','N元购买优惠',0,'N','1.99',NULL,'2024-12-07 10:20:15','2024-12-22 12:11:39');
 
 /*!40000 ALTER TABLE `group_buy_discount` ENABLE KEYS */;
 UNLOCK TABLES;

@@ -5,39 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="387e20ea-a70e-477b-8d8a-d25929f6e9f5" name="Changes" comment="2-2-250627~0628 :设计模式抽象模板的通用结构定义，添加一个 tree规则树抽象模型">
-      <change afterPath="$PROJECT_DIR$/group-buy-xa-app/src/main/resources/mybatis/mapper/sku_mapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-buy-xa-app/src/test/java/cn/bugstack/test/IIndexGroupBuyMarketServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-buy-xa-app/src/test/java/cn/bugstack/test/domain/activity/IIndexGroupBuyMarketServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/adapter/repository/IActivityRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/model/valobj/GroupBuyActivityDiscountVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/model/valobj/SkuVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/thread/QueryGroupBuyActivityDiscountV0ThreadTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/thread/QuerySkuVOFromDBThreadTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/adapter/repository/ActivityRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/ISkuDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/po/Sku.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-buy-xa-types/src/main/java/cn/bugstack/types/design/framework/tree/AbstractMultiThreadStrategyRouter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/model/valobj/DiscountTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/discount/AbstractDiscountCalculateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/discount/IDiscountCalculateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/discount/impl/MJCalculateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/discount/impl/NCalculateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/discount/impl/ZJCalculateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/discount/impl/ZKCalculateService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/dev-ops/mysql/sql/xfg-frame-archetype.sql" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/mysql/sql/group_buy_market.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/group-buy-xa-app/data/log/log_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-app/data/log/log_error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dev-ops/mysql/sql/group_buy_market.sql" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/mysql/sql/group_buy_market.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/group-buy-xa-app/data/log/log_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-app/data/log/log_info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/group-buy-xa-app/src/main/java/cn/bugstack/config/package-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/group-buy-xa-app/src/main/java/cn/bugstack/package-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/group-buy-xa-app/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-app/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/group-buy-xa-app/src/main/resources/mybatis/mapper/group_buy_activity_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-app/src/main/resources/mybatis/mapper/group_buy_activity_mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/group-buy-xa-app/src/main/resources/mybatis/mapper/group_buy_discount_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-app/src/main/resources/mybatis/mapper/group_buy_discount_mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/IIndexGroupBuyMarketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/IIndexGroupBuyMarketService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/IndexGroupBuyMarketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/IndexGroupBuyMarketServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/AbstractGroupBuyMarketSupport.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/AbstractGroupBuyMarketSupport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/model/valobj/GroupBuyActivityDiscountVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/model/valobj/GroupBuyActivityDiscountVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/factory/DefaultActivityStrategyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/factory/DefaultActivityStrategyFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/node/EndNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/node/EndNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/node/MarketNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/node/MarketNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/node/RootNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/node/RootNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/node/SwitchRoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/node/SwitchRoot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/adapter/repository/package-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/IGroupBuyActivityDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/IGroupBuyActivityDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/IGroupBuyDiscountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/IGroupBuyDiscountDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/po/GroupBuyActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/po/GroupBuyActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/adapter/repository/ActivityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/adapter/repository/ActivityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/po/GroupBuyDiscount.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/po/GroupBuyDiscount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-xa-types/src/main/java/cn/bugstack/types/enums/ResponseCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-types/src/main/java/cn/bugstack/types/enums/ResponseCode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +41,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="main-o2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -74,6 +58,11 @@
     &quot;accountId&quot;: &quot;24b925eb-fac5-42ff-81e1-c30ffa84f645&quot;
   }
 }</component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="JUnit" name="Rerun Failed Tests" />
+    </enabled-run-configurations>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 2
@@ -95,7 +84,7 @@
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "2-3-250628-multiThreadLoad",
+    "git-widget-placeholder": "2-4-250630-discountCalculate",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -109,7 +98,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.IIndexGroupBuyMarketServiceTest">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.bugstack.domain.activity.service.discount.impl" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.IIndexGroupBuyMarketServiceTest.test_indexMarketTrial">
     <configuration name="GroupBuyDaoTest.test_queryGroupBuyActivityList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="group-buy-xa-app" />
       <extension name="coverage">
@@ -286,11 +280,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.IIndexGroupBuyMarketServiceTest" />
         <item itemvalue="JUnit.IIndexGroupBuyMarketServiceTest.test_indexMarketTrial" />
+        <item itemvalue="JUnit.IIndexGroupBuyMarketServiceTest" />
         <item itemvalue="JUnit.GroupBuyDaoTest.test_queryGroupBuyDiscountList" />
         <item itemvalue="JUnit.GroupBuyDaoTest.test_queryGroupBuyActivityList" />
-        <item itemvalue="JUnit.GroupBuyDaoTest.test_queryGroupBuyDiscountList" />
+        <item itemvalue="JUnit.IIndexGroupBuyMarketServiceTest.test_indexMarketTrial" />
       </list>
     </recent_temporary>
   </component>
@@ -379,14 +373,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/adapter/repository/ActivityRepository.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/node/MarketNode.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/adapter/repository/ActivityRepository.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/node/MarketNode.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

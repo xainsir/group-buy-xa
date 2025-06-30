@@ -362,3 +362,59 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 25-06-29.19:26:17.658 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 返回结果:{"deductionPrice":0.00,"endTime":1733537980000,"goodsId":"9890001","goodsName":"《手写MyBatis：渐进式源码实践》","isEnable":false,"isVisible":false,"originalPrice":100.00,"startTime":1733537980000,"targetCount":1}
 25-06-29.19:26:17.668 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
 25-06-29.19:26:17.678 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-06-30.14:45:49.600 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_371 on LAPTOP-9J2IF5JO with PID 23116 (started by 14764 in F:\RedSpider1\group-buy-xa\group-buy-xa-app)
+25-06-30.14:45:49.601 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+25-06-30.14:45:51.702 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 2.593 seconds (JVM running for 3.879)
+25-06-30.14:45:51.978 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-06-30.14:45:53.141 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-06-30.14:45:53.200 [pool-2-thread-1 ] INFO  ActivityRepository     - 【活动】查询活动目标信息：1
+25-06-30.14:45:53.427 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-EndNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+25-06-30.14:45:53.427 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+25-06-30.14:45:53.428 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 请求参数:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+25-06-30.14:45:53.435 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 返回结果:{"deductionPrice":80.00,"endTime":1733537980000,"goodsId":"9890001","goodsName":"《手写MyBatis：渐进式源码实践》","isEnable":false,"isVisible":false,"originalPrice":100.00,"startTime":1733537980000,"targetCount":1}
+25-06-30.14:45:53.447 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-06-30.14:45:53.473 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-06-30.14:47:23.830 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_371 on LAPTOP-9J2IF5JO with PID 17220 (started by 14764 in F:\RedSpider1\group-buy-xa\group-buy-xa-app)
+25-06-30.14:47:23.832 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+25-06-30.14:47:26.311 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 2.976 seconds (JVM running for 4.371)
+25-06-30.14:47:26.625 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-06-30.14:47:27.809 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-06-30.14:47:27.887 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-06-30.14:47:27.892 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-06-30.14:49:26.054 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_371 on LAPTOP-9J2IF5JO with PID 24276 (started by 14764 in F:\RedSpider1\group-buy-xa\group-buy-xa-app)
+25-06-30.14:49:26.055 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+25-06-30.14:49:28.585 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 3.058 seconds (JVM running for 4.195)
+25-06-30.14:49:28.834 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-06-30.14:49:29.973 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-06-30.14:49:30.032 [pool-2-thread-1 ] INFO  ActivityRepository     - 【活动】查询活动目标信息：1
+25-06-30.14:49:30.234 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-EndNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+25-06-30.14:49:30.234 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+25-06-30.14:49:30.235 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 请求参数:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+25-06-30.14:49:30.243 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 返回结果:{"deductionPrice":90.00,"endTime":1733537980000,"goodsId":"9890001","goodsName":"《手写MyBatis：渐进式源码实践》","isEnable":false,"isVisible":false,"originalPrice":100.00,"startTime":1733537980000,"targetCount":1}
+25-06-30.14:49:30.256 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-06-30.14:49:30.280 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-06-30.14:50:25.964 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_371 on LAPTOP-9J2IF5JO with PID 16300 (started by 14764 in F:\RedSpider1\group-buy-xa\group-buy-xa-app)
+25-06-30.14:50:25.966 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+25-06-30.14:50:28.646 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 3.223 seconds (JVM running for 4.583)
+25-06-30.14:50:28.938 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-06-30.14:50:30.045 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-06-30.14:50:30.108 [pool-2-thread-1 ] INFO  ActivityRepository     - 【活动】查询活动目标信息：1
+25-06-30.14:50:30.320 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-EndNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+25-06-30.14:50:30.320 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+25-06-30.14:50:30.321 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 请求参数:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+25-06-30.14:50:30.339 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 返回结果:{"deductionPrice":39.99,"endTime":1733537980000,"goodsId":"9890001","goodsName":"《手写MyBatis：渐进式源码实践》","isEnable":false,"isVisible":false,"originalPrice":100.00,"startTime":1733537980000,"targetCount":1}
+25-06-30.14:50:30.353 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-06-30.14:50:30.367 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-06-30.15:32:30.984 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_371 on LAPTOP-9J2IF5JO with PID 11200 (started by 14764 in F:\RedSpider1\group-buy-xa\group-buy-xa-app)
+25-06-30.15:32:30.985 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+25-06-30.15:32:33.891 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 3.495 seconds (JVM running for 4.981)
+25-06-30.15:32:34.240 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-06-30.15:32:35.606 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-06-30.15:32:35.672 [pool-2-thread-1 ] INFO  ActivityRepository     - 【活动】查询活动目标信息：1
+25-06-30.15:32:35.911 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-EndNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+25-06-30.15:34:43.477 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m7s159ms106µs100ns).
+25-06-30.15:34:43.477 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+25-06-30.15:34:43.478 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 请求参数:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+25-06-30.15:34:43.486 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 返回结果:{"deductionPrice":39.99,"endTime":1733537980000,"goodsId":"9890001","goodsName":"《手写MyBatis：渐进式源码实践》","isEnable":false,"isVisible":false,"originalPrice":100.00,"startTime":1733537980000,"targetCount":1}
+25-06-30.15:34:43.499 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-06-30.15:34:43.515 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
