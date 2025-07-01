@@ -9,4 +9,6 @@ import java.util.List;
 public interface IGroupBuyActivityDao {
     List<GroupBuyActivity> queryGroupBuyActivityList();
     GroupBuyActivity queryValidGroupBuyActivity(GroupBuyActivity groupBuyActivity);// 查询有效的活动
+    GroupBuyActivity queryValidGroupBuyActivityId(Long  activityId);// 根据活动ID查询有效的活动
+
 }

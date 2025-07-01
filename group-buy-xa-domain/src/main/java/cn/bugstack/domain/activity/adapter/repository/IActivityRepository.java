@@ -1,6 +1,7 @@
 package cn.bugstack.domain.activity.adapter.repository;
 
 import cn.bugstack.domain.activity.model.valobj.GroupBuyActivityDiscountVO;
+import cn.bugstack.domain.activity.model.valobj.SCSkuActivityVO;
 import cn.bugstack.domain.activity.model.valobj.SkuVO;
 
 /**
@@ -11,7 +12,8 @@ import cn.bugstack.domain.activity.model.valobj.SkuVO;
  */
 public interface IActivityRepository {
 
-    GroupBuyActivityDiscountVO queryGroupBuyActivityDiscountVO(String source,String channel);// 获取活动信息
+    GroupBuyActivityDiscountVO queryGroupBuyActivityDiscountVO(Long activityId);// 获取活动信息
     SkuVO querySkuByGoodsId(String goodsId);// 获取商品信息
 
+    SCSkuActivityVO querySCSkuActivityBySCGoodsId(String source, String channel,String goodsId);
 }

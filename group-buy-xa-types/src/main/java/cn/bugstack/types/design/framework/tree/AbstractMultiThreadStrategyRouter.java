@@ -17,7 +17,7 @@ public abstract class AbstractMultiThreadStrategyRouter<T,D,R> implements Strate
 
     protected StrategyHandler<T,D,R>defaultStrategyHandler = StrategyHandler.DEFAULT;
     public R router(T requestParameter, D dynamicContext) throws Exception {
-        StrategyHandler<T,D,R> strategyHandler = get(requestParameter, dynamicContext);
+        StrategyHandler<T,D,R> strategyHandler = get(requestParameter, dynamicContext);// 通过调用策略映射器get方法，控制节点流程的走向,如果合理则走到下一个节点。
         if (null == strategyHandler) strategyHandler = defaultStrategyHandler;
         return strategyHandler.apply(requestParameter, dynamicContext);
     }

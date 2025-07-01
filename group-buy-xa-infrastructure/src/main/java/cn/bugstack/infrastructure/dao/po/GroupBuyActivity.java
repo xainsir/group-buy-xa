@@ -12,7 +12,7 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @Accessors(chain = true)
-public class GroupBuyActivity {
+public class GroupBuyActivity { // 0701：删除了与商品的耦合，独立表达活动配置信息
 
     private Long id;/** 自增 */
 
@@ -22,13 +22,7 @@ public class GroupBuyActivity {
 
     private String discountId; /** 折扣ID */
 
-    private String goodsId;/** 商品ID */
-
     private Integer groupType;/** 拼团方式（0自动成团、1达成目标拼团） */
-
-    private String source;/** 来源 */
-
-    private String channel;/** 渠道 */
 
     private Integer takeLimitCount; /** 拼团次数限制 */
 
