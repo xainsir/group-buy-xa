@@ -1,8 +1,11 @@
 package cn.bugstack.domain.activity.model.valobj;
+import cn.bugstack.types.common.Constants;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.apache.commons.lang3.StringUtils;
+
 import java.util.Date;
 /**
  * GroupBuyActivityDiscountVO
@@ -59,6 +62,27 @@ public class GroupBuyActivityDiscountVO {
 
     /** 结束时间 */
     private Date endTime;
+
+    /** 可见限制 */
+    public boolean isVisible() {
+        if(StringUtils.isBlank(tagScope))return TagScopeEnumVo.VISIBLE.getAllow();
+        String split[]=tagScope.split(Constants.SPLIT);
+        if(split.length>0 && StringUtils.isNotBlank(split[0]) && split[0].equals("1")){
+            return TagScopeEnumVo.VISIBLE.getRefuse();
+        }
+        return TagScopeEnumVo.VISIBLE.getAllow();
+    }
+    /** 参与限制 */
+    public boolean isEnable() {
+        if(StringUtils.isBlank(tagScope))return TagScopeEnumVo.ENABLE.getAllow();
+        String split[]=tagScope.split(Constants.SPLIT);
+        if(split.length>1 && StringUtils.isNotBlank(split[1]) && split[1].equals("2")){
+            return TagScopeEnumVo.ENABLE.getRefuse();
+        }
+        return TagScopeEnumVo.ENABLE.getAllow();
+    }
+
+
 
     @Getter
     @Builder

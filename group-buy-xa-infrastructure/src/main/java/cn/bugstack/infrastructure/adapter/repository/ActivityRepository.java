@@ -13,7 +13,9 @@ import cn.bugstack.infrastructure.dao.po.GroupBuyActivity;
 import cn.bugstack.infrastructure.dao.po.GroupBuyDiscount;
 import cn.bugstack.infrastructure.dao.po.SCSkuActivity;
 import cn.bugstack.infrastructure.dao.po.Sku;
+import cn.bugstack.infrastructure.redis.IRedisService;
 import lombok.extern.slf4j.Slf4j;
+import org.redisson.api.RBitSet;
 import org.springframework.stereotype.Repository;
 
 import javax.annotation.Resource;
@@ -36,6 +38,8 @@ public class ActivityRepository implements IActivityRepository {
     private ISkuDao skuDao;
     @Resource
     private ISCSkuActivityDao scSkuActivityDao;
+    @Resource
+    private IRedisService redisService;
     @Override // DB查询活动信息
     public GroupBuyActivityDiscountVO queryGroupBuyActivityDiscountVO(Long activityId) {
 
@@ -101,6 +105,15 @@ public class ActivityRepository implements IActivityRepository {
                 .activityId(scSkuActivity.getActivityId())
                 .build();
         return scSkuActivityVO;
+    }
+
+    @Override
+    public boolean isTagCrowdRange(String tagId, String userId) {
+        // 使用redis bitMap 判断用户是否在对应的人群包中
+        RBitSet bitSet = redisService.getBitSet(tagId);
+        if(!bitSet.isExists())return true;// 如果不存在该人群包，则不拦截该用户
+        Boolean isWithin = bitSet.get(redisService.getIndexFromUserId(userId));
+        return isWithin;// 判断用户是否在人群包中，需要先获取用户在redis中的索引
     }
 }
  

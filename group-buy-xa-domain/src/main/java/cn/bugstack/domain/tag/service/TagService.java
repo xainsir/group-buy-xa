@@ -18,8 +18,8 @@ import javax.annotation.Resource;
  * @date 2025/6/30 17:54
  */
 @Service
+@Slf4j
 public class TagService implements ITagService{
-    private static final Logger log = LoggerFactory.getLogger(TagService.class);
     @Resource
     private ITagRepository repository;
     @Override

@@ -16,4 +16,6 @@ public interface IActivityRepository {
     SkuVO querySkuByGoodsId(String goodsId);// 获取商品信息
 
     SCSkuActivityVO querySCSkuActivityBySCGoodsId(String source, String channel,String goodsId);
+    boolean isTagCrowdRange(String tagId, String userId);// 增加新人群包可见逻辑
+
 }

@@ -36,13 +36,11 @@ public class MarketNode extends AbstractGroupBuyMarketSupport<MarketProductEntit
     @Resource
     private ThreadPoolExecutor threadPoolExecutor;
     @Resource
-    private EndNode endNode;
-    @Resource
     private ErrorNode errorNode;
     @Resource
     private Map<String, IDiscountCalculateService> discountMap;
     @Autowired
-    private View error;
+    private TagNode tagNode;
 
     @Override
     public void multiThread(MarketProductEntity requestParameter, DefaultActivityStrategyFactory.DynamicContext dynamicContext) throws ExecutionException, InterruptedException, TimeoutException {
@@ -92,7 +90,7 @@ public class MarketNode extends AbstractGroupBuyMarketSupport<MarketProductEntit
                 ||Objects.isNull(dynamicContext.getDeductionPrice())){
             return errorNode;
         }
-        return endNode;
+        return tagNode;
     }
 }
  

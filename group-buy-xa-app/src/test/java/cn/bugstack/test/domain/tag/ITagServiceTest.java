@@ -38,5 +38,10 @@ public class ITagServiceTest {
         log.info("用户名：{}，是否被框选人群包：{}", "xiaohong", bitSet.get(redisService.getIndexFromUserId("xiaohong")));
         log.info("用户名：{}，是否被框选人群包：{}", "xiaoming", bitSet.get(redisService.getIndexFromUserId("xiaoming")));
     }
+    @Test// 测试空人群包
+    public void test_getIndexFromUserId_null() throws Exception {
+        RBitSet bitSet = redisService.getBitSet("null");
+        log.info("测试空结果:{}", bitSet.isExists());
+    }
 }
  
