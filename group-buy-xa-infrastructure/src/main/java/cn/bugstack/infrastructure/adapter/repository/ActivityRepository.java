@@ -13,6 +13,7 @@ import cn.bugstack.infrastructure.dao.po.GroupBuyActivity;
 import cn.bugstack.infrastructure.dao.po.GroupBuyDiscount;
 import cn.bugstack.infrastructure.dao.po.SCSkuActivity;
 import cn.bugstack.infrastructure.dao.po.Sku;
+import cn.bugstack.infrastructure.dcc.DCCService;
 import cn.bugstack.infrastructure.redis.IRedisService;
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RBitSet;
@@ -40,6 +41,8 @@ public class ActivityRepository implements IActivityRepository {
     private ISCSkuActivityDao scSkuActivityDao;
     @Resource
     private IRedisService redisService;
+    @Resource
+    private DCCService dccService;
     @Override // DB查询活动信息
     public GroupBuyActivityDiscountVO queryGroupBuyActivityDiscountVO(Long activityId) {
 
@@ -115,5 +118,14 @@ public class ActivityRepository implements IActivityRepository {
         Boolean isWithin = bitSet.get(redisService.getIndexFromUserId(userId));
         return isWithin;// 判断用户是否在人群包中，需要先获取用户在redis中的索引
     }
+
+    @Override
+    public boolean cutRange(String userId) {
+        return dccService.isCutRange(userId);
+    }
+
+    @Override
+    public boolean downgradeSwitch() {
+        return dccService.isDowngradeSwitch();
+    }
 }
- 

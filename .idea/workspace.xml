@@ -4,21 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="387e20ea-a70e-477b-8d8a-d25929f6e9f5" name="Changes" comment="feat:2-4:增加通过策略模式进行优惠折扣计算">
-      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/model/valobj/TagScopeEnumVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/node/TagNode.java" afterDir="false" />
+    <list default="true" id="387e20ea-a70e-477b-8d8a-d25929f6e9f5" name="Changes" comment="chore: 忽略日志文件提交">
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-api/src/main/java/cn/bugstack/api/IDCCService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-app/src/main/java/cn/bugstack/config/DCCValueBeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/dcc/DCCService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-trigger/src/main/java/cn/bugstack/trigger/http/DCCController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-types/src/main/java/cn/bugstack/types/annotations/DCCValue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/group-buy-xa-app/data/log/log_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-app/data/log/log_error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/group-buy-xa-app/data/log/log_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-app/data/log/log_info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/group-buy-xa-app/src/test/java/cn/bugstack/test/domain/activity/IIndexGroupBuyMarketServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-app/src/test/java/cn/bugstack/test/domain/activity/IIndexGroupBuyMarketServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/group-buy-xa-app/src/test/java/cn/bugstack/test/domain/tag/ITagServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-app/src/test/java/cn/bugstack/test/domain/tag/ITagServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/adapter/repository/IActivityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/adapter/repository/IActivityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/model/valobj/GroupBuyActivityDiscountVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/model/valobj/GroupBuyActivityDiscountVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/factory/DefaultActivityStrategyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/factory/DefaultActivityStrategyFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/node/EndNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/node/EndNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/node/MarketNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/node/MarketNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/tag/service/TagService.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/tag/service/TagService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/node/SwitchRoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/node/SwitchRoot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/adapter/repository/ActivityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/adapter/repository/ActivityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-xa-trigger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-trigger/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-xa-types/src/main/java/cn/bugstack/types/enums/ResponseCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-types/src/main/java/cn/bugstack/types/enums/ResponseCode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,10 +26,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
         <option value="Class" />
-        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -78,11 +75,16 @@
     "JUnit.ITagServiceTest.test_execTagBatchJob.executor": "Run",
     "JUnit.ITagServiceTest.test_getIndexFromUserId.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "2-7-250702-tagNode-design",
+    "Spring Boot.Application.executor": "Run",
+    "git-widget-placeholder": "2-8-250702-dcc",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/RedSpider1/group-buy-xa/group-buy-xa-app/src/main/resources/mybatis/mapper",
+    "last_opened_file_path": "F:/RedSpider1/group-buy-xa/group-buy-xa-types/src/main/java/cn/bugstack/types",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -91,7 +93,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.13967973",
     "project.structure.side.proportion": "0.23522727",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.runner",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -100,6 +102,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\RedSpider1\group-buy-xa\group-buy-xa-types\src\main\java\cn\bugstack\types" />
       <recent name="F:\RedSpider1\group-buy-xa\group-buy-xa-app\src\main\resources\mybatis\mapper" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -107,7 +110,7 @@
       <recent name="cn.bugstack.domain.activity.service.discount.impl" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.IIndexGroupBuyMarketServiceTest.test_indexMarketTrial_no_tag">
+  <component name="RunManager" selected="Spring Boot.Application">
     <configuration name="IIndexGroupBuyMarketServiceTest.test_indexMarketTrial" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="group-buy-xa-app" />
       <extension name="coverage">
@@ -301,9 +304,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.IIndexGroupBuyMarketServiceTest.test_indexMarketTrial_no_tag" />
-        <item itemvalue="JUnit.ITagServiceTest.test_execTagBatchJob" />
         <item itemvalue="JUnit.ITagServiceTest.test_getIndexFromUserId" />
+        <item itemvalue="JUnit.ITagServiceTest.test_execTagBatchJob" />
+        <item itemvalue="JUnit.IIndexGroupBuyMarketServiceTest.test_indexMarketTrial_no_tag" />
         <item itemvalue="JUnit.IIndexGroupBuyMarketServiceTest.test_indexMarketTrial_error" />
         <item itemvalue="JUnit.IIndexGroupBuyMarketServiceTest.test_indexMarketTrial" />
       </list>
@@ -370,7 +373,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751375196800</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="chore: 忽略日志文件提交">
+      <option name="closed" value="true" />
+      <created>1751450417833</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1751450417833</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,7 +417,8 @@
     <MESSAGE value="2-2-250627~0628 :设计模式抽象模板的通用结构定义，添加一个 tree规则树抽象模型" />
     <MESSAGE value="feat:2-4:增加通过策略模式进行优惠折扣计算" />
     <MESSAGE value="feat:2-6:拆分活动库表，消除与商品的耦合、增加错误处理节点" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:2-6:拆分活动库表，消除与商品的耦合、增加错误处理节点" />
+    <MESSAGE value="chore: 忽略日志文件提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: 忽略日志文件提交" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -430,19 +442,6 @@
           <url>file://$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/node/TagNode.java</url>
           <line>49</line>
           <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/adapter/repository/ActivityRepository.java</url>
-          <line>115</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/adapter/repository/ActivityRepository.java</url>
-          <line>113</line>
-          <properties>
-            <option name="lambda-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
