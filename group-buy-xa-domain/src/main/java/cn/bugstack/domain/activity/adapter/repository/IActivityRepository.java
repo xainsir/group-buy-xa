@@ -18,4 +18,6 @@ public interface IActivityRepository {
     SCSkuActivityVO querySCSkuActivityBySCGoodsId(String source, String channel,String goodsId);
     boolean isTagCrowdRange(String tagId, String userId);// 增加新人群包可见逻辑
 
+    boolean cutRange(String userId);
+    boolean downgradeSwitch();
 }
