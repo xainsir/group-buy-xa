@@ -5,17 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="387e20ea-a70e-477b-8d8a-d25929f6e9f5" name="Changes" comment="chore: 忽略日志文件提交">
-      <change afterPath="$PROJECT_DIR$/group-buy-xa-api/src/main/java/cn/bugstack/api/IDCCService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-buy-xa-app/src/main/java/cn/bugstack/config/DCCValueBeanFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/dcc/DCCService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-buy-xa-trigger/src/main/java/cn/bugstack/trigger/http/DCCController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group-buy-xa-types/src/main/java/cn/bugstack/types/annotations/DCCValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-api/src/main/java/cn/bugstack/api/IMarketTradeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-api/src/main/java/cn/bugstack/api/dto/LockMarketPayOrderRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-api/src/main/java/cn/bugstack/api/dto/LockMarketPayOrderResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-app/src/main/resources/mybatis/mapper/group_buy_order_list_mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-app/src/main/resources/mybatis/mapper/group_buy_order_mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-app/src/test/java/cn/bugstack/test/trigger/MarketTradeControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/trade/adapter/repository/ITradeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/trade/model/aggregate/GroupBuyOrderAggregate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/trade/model/entity/MarketPayOrderEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/trade/model/entity/PayActivityEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/trade/model/entity/PayDiscountEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/trade/model/entity/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/trade/model/valobj/GroupBuyProgressVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/trade/model/valobj/TradeOrderStatusEnumVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/trade/service/ITradeOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/trade/service/TradeOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/adapter/repository/TradeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/IGroupBuyOrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/IGroupBuyOrderListDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/po/GroupBuyOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/po/GroupBuyOrderList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group-buy-xa-trigger/src/main/java/cn/bugstack/trigger/http/MarketTradeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/adapter/repository/IActivityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/adapter/repository/IActivityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dev-ops/mysql/sql/group_buy_market.sql" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/mysql/sql/group_buy_market.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-xa-api/src/main/java/cn/bugstack/api/dto/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-xa-api/src/main/java/cn/bugstack/api/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-xa-app/data/log/log_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-app/data/log/log_error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-xa-app/data/log/log_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-app/data/log/log_info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-xa-app/src/main/resources/mybatis/mapper/sc_sku_activity_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-app/src/main/resources/mybatis/mapper/sc_sku_activity_mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/model/entity/MarketProductEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/model/entity/MarketProductEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/model/entity/TrialBalanceEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/model/entity/TrialBalanceEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/node/EndNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/node/EndNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/node/SwitchRoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/node/SwitchRoot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/adapter/repository/ActivityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-infrastructure/src/main/java/cn/bugstack/infrastructure/adapter/repository/ActivityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/group-buy-xa-trigger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-trigger/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-xa-trigger/src/main/java/cn/bugstack/trigger/http/package-info.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/group-buy-xa-types/src/main/java/cn/bugstack/types/enums/ResponseCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-types/src/main/java/cn/bugstack/types/enums/ResponseCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group-buy-xa-types/src/main/java/cn/bugstack/types/exception/AppException.java" beforeDir="false" afterPath="$PROJECT_DIR$/group-buy-xa-types/src/main/java/cn/bugstack/types/exception/AppException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +99,8 @@
     "JUnit.IIndexGroupBuyMarketServiceTest.test_indexMarketTrial_no_tag.executor": "Debug",
     "JUnit.ITagServiceTest.test_execTagBatchJob.executor": "Run",
     "JUnit.ITagServiceTest.test_getIndexFromUserId.executor": "Run",
+    "JUnit.MarketTradeControllerTest.test_lockMarketPayOrder.executor": "Debug",
+    "JUnit.MarketTradeControllerTest.test_lockMarketPayOrder_teamId_not_null.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -82,9 +109,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.Application.executor": "Run",
-    "git-widget-placeholder": "2-8-250702-dcc",
+    "git-widget-placeholder": "2-9-trade-lock-order",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/RedSpider1/group-buy-xa/group-buy-xa-types/src/main/java/cn/bugstack/types",
+    "last_opened_file_path": "F:/RedSpider1/group-buy-xa/group-buy-xa-app/src/main/resources/mybatis/mapper",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -102,47 +129,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\RedSpider1\group-buy-xa\group-buy-xa-types\src\main\java\cn\bugstack\types" />
       <recent name="F:\RedSpider1\group-buy-xa\group-buy-xa-app\src\main\resources\mybatis\mapper" />
+      <recent name="F:\RedSpider1\group-buy-xa\group-buy-xa-types\src\main\java\cn\bugstack\types" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.bugstack.infrastructure.dao.po" />
       <recent name="cn.bugstack.domain.tag.adapter.repository" />
       <recent name="cn.bugstack.domain.activity.service.discount.impl" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
-    <configuration name="IIndexGroupBuyMarketServiceTest.test_indexMarketTrial" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="group-buy-xa-app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.bugstack.test.domain.activity.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.bugstack.test.domain.activity" />
-      <option name="MAIN_CLASS_NAME" value="cn.bugstack.test.domain.activity.IIndexGroupBuyMarketServiceTest" />
-      <option name="METHOD_NAME" value="test_indexMarketTrial" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IIndexGroupBuyMarketServiceTest.test_indexMarketTrial_error" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="group-buy-xa-app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.bugstack.test.domain.activity.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.bugstack.test.domain.activity" />
-      <option name="MAIN_CLASS_NAME" value="cn.bugstack.test.domain.activity.IIndexGroupBuyMarketServiceTest" />
-      <option name="METHOD_NAME" value="test_indexMarketTrial_error" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MarketTradeControllerTest.test_lockMarketPayOrder_teamId_not_null">
     <configuration name="IIndexGroupBuyMarketServiceTest.test_indexMarketTrial_no_tag" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="group-buy-xa-app" />
       <extension name="coverage">
@@ -186,6 +182,38 @@
       <option name="PACKAGE_NAME" value="cn.bugstack.test.domain.tag" />
       <option name="MAIN_CLASS_NAME" value="cn.bugstack.test.domain.tag.ITagServiceTest" />
       <option name="METHOD_NAME" value="test_getIndexFromUserId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MarketTradeControllerTest.test_lockMarketPayOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="group-buy-xa-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.bugstack.test.trigger.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.bugstack.test.trigger" />
+      <option name="MAIN_CLASS_NAME" value="cn.bugstack.test.trigger.MarketTradeControllerTest" />
+      <option name="METHOD_NAME" value="test_lockMarketPayOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MarketTradeControllerTest.test_lockMarketPayOrder_teamId_not_null" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="group-buy-xa-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.bugstack.test.trigger.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.bugstack.test.trigger" />
+      <option name="MAIN_CLASS_NAME" value="cn.bugstack.test.trigger.MarketTradeControllerTest" />
+      <option name="METHOD_NAME" value="test_lockMarketPayOrder_teamId_not_null" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -304,11 +332,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MarketTradeControllerTest.test_lockMarketPayOrder_teamId_not_null" />
+        <item itemvalue="JUnit.MarketTradeControllerTest.test_lockMarketPayOrder" />
         <item itemvalue="JUnit.ITagServiceTest.test_getIndexFromUserId" />
         <item itemvalue="JUnit.ITagServiceTest.test_execTagBatchJob" />
         <item itemvalue="JUnit.IIndexGroupBuyMarketServiceTest.test_indexMarketTrial_no_tag" />
-        <item itemvalue="JUnit.IIndexGroupBuyMarketServiceTest.test_indexMarketTrial_error" />
-        <item itemvalue="JUnit.IIndexGroupBuyMarketServiceTest.test_indexMarketTrial" />
       </list>
     </recent_temporary>
   </component>
@@ -422,28 +450,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/node/TagNode.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/node/TagNode.java</url>
-          <line>61</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/node/TagNode.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/group-buy-xa-domain/src/main/java/cn/bugstack/domain/activity/service/trial/node/TagNode.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">

@@ -31,7 +31,7 @@ public class SwitchRoot extends AbstractGroupBuyMarketSupport<MarketProductEntit
             throw new AppException(ResponseCode.E0003.getCode(),ResponseCode.E0003.getInfo());
         }
         // 切量开关判断
-        if(activityRepository.cutRange(userId)){
+        if(!activityRepository.cutRange(userId)){
             throw new AppException(ResponseCode.E0004.getCode(),ResponseCode.E0004.getInfo());
         }
 

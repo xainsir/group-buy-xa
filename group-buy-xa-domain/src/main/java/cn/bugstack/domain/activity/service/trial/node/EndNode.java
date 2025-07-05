@@ -42,6 +42,7 @@ public class EndNode extends AbstractGroupBuyMarketSupport<MarketProductEntity, 
                 .endTime(groupBuyActivityDiscountVO.getEndTime())
                 .isVisible(dynamicContext.getVisible()) // 是否活动可见
                 .isEnable(dynamicContext.getEnable())   // 是否限制参与
+                .groupBuyActivityDiscountVO(groupBuyActivityDiscountVO) // 装载全局拼团活动折扣信息
                 .build();
     }
     @Override
